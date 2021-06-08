@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>South Region</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+  
+</head>
+<body>
+ 
+ <!-- Start Header  -->
+ <header>
+ 	 <div class="container">
+ 	 	<div class="logo">
+ 	 		 <a href="">Historical <span>Monuments</span></a>
+ 	 	</div>
+ 	 	<a href="javascript:void(0)" class="ham-burger">
+ 	       <span></span>	
+ 	       <span></span>
+ 	 	</a>
+ 	 	<div class="nav">
+ 	 		<ul>
+ 	 			<li><a href="/index.html#home">Home</a></li>
+ 	 			
+				<li><a href="#north">North Region</a></li>
+ 	 			<li><a href="#east">East Region</a></li>
+ 	 			<li><a href="#west">West Region</a></li>
+				  <li><a href="#south">South Region</a></li>
+				  
+ 	 			<li><a href="#service">Services</a></li>
+				  <li><a href="#about">About</a></li>
+ 	 			<li><a href="#contact">Contact</a></li>
+ 	 		</ul>
+ 	 	</div>
+ 	 </div>
+ </header>
+ <!-- End Header  -->
+
+  <!-- Start Home -->
+  <section class="home wow flash" id="home">
+	  <video src="./photos/west/Why is Al Aqsa at the heart of the Israeli-Palestinian conflict.mp4" autoplay muted loop type="mov"></video>
+  	 <div class="container">
+  	 	  <!-- <h1 class="wow slideInLeft" data-wow-delay="1s">The <span> Badshahi</span> Mosque </h1> -->
+  	 	  <!-- <h1 class="wow slideInRight" data-wow-delay="1s">To Find <span>Out Some Mystery</span> </h1> -->
+			 <!-- <h1 class="wow slidEInLeft"data-wow-delay="2s">To Find Out Some Mystery</h1> -->
+  	 </div>
+  	  <!-- go down -->
+  	      <a href="#about" class="go-down">
+  	      	  <i class="fa fa-angle-down" aria-hidden="true"></i>
+  	      </a>
+  	  <!-- go down -->
+
+  </section>
+  <!-- End Home -->
+
+
+  <section class="service" id="south">
+	<div class="container">
+		 <div class="content">
+			   <div class="text box wow slideInLeft">
+                <h2>West Region</h2>
+                <h3>al-aqsa mosque</h3>
+                <p>The covered mosque building was originally a small prayer house erected by Umar, the second caliph of the Rashidun Caliphate, after the Muslim conquest of the Levant in the early 7th century. It was rebuilt and expanded by the Umayyad caliph Abd al-Malik and finished by his son al-Walid in 705.
+                </p>
+                <p> Al Masjid Al-Aqsa was founded forty (days or months or years) next to the Ka`bah. Historians believe that Prophet Ibrahim, peace and blessings be upon him, was the one who built or ordered Al-Aqsa to be built.</p>
+				 <!-- <a href="" class="btn">Start Now</a> -->
+			   </div>
+			   <div class="accordian box wow slideInRight right_img">
+					  <img src="./photos/west/lift.jpg" alt="">
+			   </div>
+		 </div>
+	</div>
+</section>
+
+
+  <section class="gallery" id="gallery" style="margin-top: 5%;">
+  	 <h2> Gallery</h2>
+  	<div class="content">
+  		 <div class="box wow slideInLeft">
+  		 	 <img src="./photos/west/up.jpg" alt="gallery" />
+  		 </div>
+  		 <div class="box wow slideInRight">
+  		 	 <img src="./photos/west/side.jpg" alt="gallery" />
+  		 </div>
+  		 <div class="box wow slideInLeft">
+  		 	 <img src="./photos/west/out side.jpg" alt="gallery" />
+  		 </div>
+  		 <div class="box wow slideInRight">
+  		 	 <img src="./photos/west/back.jpeg" alt="gallery" />
+  		 </div>
+  	</div>
+  </section>
+
+
+ <!-- Start Contact -->
+  <section class="contact" id="contact">
+     <div class="container">
+        <div class="content">
+            <div class="box form wow slideInLeft">
+               <form>
+                  <input type="text" placeholder="Enter Name">
+                  <input type="text" placeholder="Enter Email">
+                  <input type="text" placeholder="Enter Mobile">
+                  <textarea placeholder="Enter Message"></textarea>
+                  <button type="submit">Send Message</button>
+               </form>
+            </div>
+            <div class="box text wow slideInRight">
+                 <h2>Get Connected with Us</h2>
+                  <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <div class="info">
+                      <ul>
+                          <li><span class="fa fa-map-marker"></span> Jerusalem</li>
+                          <li><span class="fa fa-phone"></span> 974 00000000</li>
+                          <li><span class="fa fa-envelope"></span> info@.com</li>
+                      </ul>
+                  </div>
+                  <div class="social">
+                       <a href=""><span class="fa fa-facebook"></span></a>
+                       <a href=""><span class="fa fa-linkedin"></span></a>
+                       <a href=""><span class="fa fa-skype"></span></a>
+                       <a href=""><span class="fa fa-youtube-play"></span></a>
+                  </div>
+
+                  <div class="copy">
+                  </div>
+            </div>
+        </div>
+     </div>
+  </section>
+ <!-- End Contact -->
+
+
+
+ <!-- jquery -->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+      $(".ham-burger, .nav ul li a").click(function(){
+       
+        $(".nav").toggleClass("open")
+
+        $(".ham-burger").toggleClass("active");
+      })      
+      $(".accordian-container").click(function(){
+      	$(".accordian-container").children(".body").slideUp();
+      	$(".accordian-container").removeClass("active")
+      	$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+      	$(this).children(".body").slideDown();
+      	$(this).addClass("active")
+      	$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+      })
+
+       $(".nav ul li a, .go-down").click(function(event){
+         if(this.hash !== ""){
+
+              event.preventDefault();
+
+              var hash=this.hash; 
+
+              $('html,body').animate({
+                scrollTop:$(hash).offset().top
+              },800 , function(){
+                 window.location.hash=hash;
+              });
+
+              // add active class in navigation
+              $(".nav ul li a").removeClass("active")
+              $(this).addClass("active")
+         }
+      })
+})
+
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
